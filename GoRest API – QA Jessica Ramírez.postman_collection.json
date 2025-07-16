@@ -1,0 +1,120 @@
+{
+	"info": {
+		"_postman_id": "7dd3de5a-7189-4425-a5f9-813c98f706c7",
+		"name": "GoRest API – QA Jessica Ramírez",
+		"description": "- Colección de pruebas para validar los endpoints de usuarios en la API pública de GoRest.EndFragment",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "32045104",
+		"_collection_link": "https://planetary-capsule-100842.postman.co/workspace/Buggy-Cars-API~ab01f142-f295-43c5-bfea-a3e1fbbecbb3/collection/32045104-7dd3de5a-7189-4425-a5f9-813c98f706c7?action=share&source=collection_link&creator=32045104"
+	},
+	"item": [
+		{
+			"name": "Obtener todos los usuarios",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://gorest.co.in/public/v2/users",
+					"protocol": "https",
+					"host": [
+						"gorest",
+						"co",
+						"in"
+					],
+					"path": [
+						"public",
+						"v2",
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Consultar usuario inexistente",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer 89e48db8f298077cc8910756485479a56918ad1663cd4ffd38bb95d9f6dcb582",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://gorest.co.in/public/v2/users/999999",
+					"protocol": "https",
+					"host": [
+						"gorest",
+						"co",
+						"in"
+					],
+					"path": [
+						"public",
+						"v2",
+						"users",
+						"999999"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Crear un nuevo usuario exitosamente",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"QA Jessica Test\",\r\n  \"gender\": \"female\",\r\n  \"email\": \"qa.jessica.test\"123\"@gmail.com\",\r\n  \"status\": \"active\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://gorest.co.in/public/v2/users?Authorization=Bearer 89e48db8f298077cc8910756485479a56918ad1663cd4ffd38bb95d9f6dcb582&Content-Type=application/json",
+					"protocol": "https",
+					"host": [
+						"gorest",
+						"co",
+						"in"
+					],
+					"path": [
+						"public",
+						"v2",
+						"users"
+					],
+					"query": [
+						{
+							"key": "Authorization",
+							"value": "Bearer 89e48db8f298077cc8910756485479a56918ad1663cd4ffd38bb95d9f6dcb582"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Crear usuario sin token",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "crear usuario con email invalido",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
