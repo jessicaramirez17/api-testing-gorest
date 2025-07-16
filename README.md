@@ -39,7 +39,7 @@ Diseñar y ejecutar pruebas manuales sobre los endpoints de la API GoRest, simul
 
 ## 📸 Evidencia
 
-Las capturas de pantalla de cada ejecución se encuentran documentadas en mi portafolio Notion: [(https://notion.so)](https://www.notion.so/Portafolio-QA-Jessica-Andrea-Ram-rez-Camacho-23290bf6a10780548085df8654459004?source=copy_link).
+Las capturas de pantalla de cada ejecución se encuentran documentadas en mi portafolio Notion en la sección proyectos QA: [(https://notion.so)](https://www.notion.so/Portafolio-QA-Jessica-Andrea-Ram-rez-Camacho-23290bf6a10780548085df8654459004?source=copy_link).
 
 ---
 
